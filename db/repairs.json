@@ -1,0 +1,56 @@
+{
+  "repair1": {
+    "id": "repair1",
+    "name": "Engine Oil",
+    "comments": "check oil filter also",
+    "isDone": true,
+    "isMod": false,
+    "mileage": 1000,
+    "motorcycleId": "motorcycle1"
+  },
+  "repair2": {
+    "id": "repair2",
+    "name": "Air Cleaner",
+    "comments": "clean or replace",
+    "isDone": false,
+    "isMod": false,
+    "mileage": 5000,
+    "motorcycleId": "motorcycle2"
+  },
+  "repair3": {
+    "id": "repair3",
+    "name": "Seat",
+    "comments": "replace with solo seat with backrest",
+    "isDone": false,
+    "isMod": true,
+    "mileage": 1000,
+    "motorcycleId": "motorcycle1"
+  },
+  "repair4": {
+    "id": "repair4",
+    "name": "Steel Braided Brake Lines",
+    "comments": "dealer performed mod",
+    "isDone": true,
+    "isMod": true,
+    "mileage": 3000,
+    "motorcycleId": "motorcycle2"
+  },
+  "repair5": {
+    "id": "repair5",
+    "name": "Steel Braided Brake Lines",
+    "comments": "dealer performed mod",
+    "isDone": false,
+    "isMod": true,
+    "mileage": 3000,
+    "motorcycleId": "motorcycle2"
+  },
+  "repair6": {
+    "id": "repair6",
+    "name": "Air Cleaner",
+    "comments": "replace",
+    "isDone": false,
+    "isMod": false,
+    "mileage": 5000,
+    "motorcycleId": "motorcycle1"
+  }
+}
