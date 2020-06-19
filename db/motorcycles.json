@@ -4,14 +4,14 @@
     "name": "2020 Harley Davidson Fat Boy",
     "imageUrl": "https://content.homenetiol.com/2000292/2100893/0x0/ffc57d19e77f46549e22a6341343f22e.jpg",
     "mileage": 50,
-    "uid": "string"
+    "uid": "2voYRLvxnjh503NFAyqgKgUk9ng1"
   },
   "motorcycle2": {
     "id": "motorcycle2",
     "name": "2020 Harley Davidson Road King",
     "imageUrl": "https://imotorcarsearch.s3.amazonaws.com/vehicles/large/1096674_J05890_2_beea1812d7a872b3.jpg",
     "mileage": 150,
-    "uid": "string"
+    "uid": "2voYRLvxnjh503NFAyqgKgUk9ng1"
   },
   "motorcycle3": {
     "id": "motorcycle3",
