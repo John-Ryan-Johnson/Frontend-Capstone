@@ -18,6 +18,12 @@ import EditMotorcycle from '../components/pages/EditMotorcycle/EditMotorcycle';
 import Motorcycles from '../components/pages/Motorcycles/Motorcycles';
 import NewMotorcycle from '../components/pages/NewMotorcycle/NewMotorcycle';
 import SingleMotorcycle from '../components/pages/SingleMotorcycle/SingleMotorcycle';
+import Repairs from '../components/pages/Repairs/Repairs';
+import EditRepair from '../components/pages/EditRepair/EditRepair';
+import NewRepair from '../components/pages/NewRepair/NewRepair';
+import SingleRepair from '../components/pages/SingleRepair/SingleRepair';
+import Mods from '../components/pages/Mods/Mods';
+import SingleMod from '../components/pages/SingleMod/SingleMod';
 
 import fbConnection from '../helpers/data/connection';
 
