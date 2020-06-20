@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 
 import authData from '../../../helpers/data/authData';
 import motorcyclesData from '../../../helpers/data/motorcyclesData';
+import MotorcycleCard from '../../shared/MotorcycleCard/MotorcycleCard';
 
 import './Motorcycles.scss';
 
@@ -30,8 +31,8 @@ class Motorcycles extends React.Component {
     ));
     return (
       <div>
-        <h1>My Motorcycles</h1>
-        <Link to='/motorcycles/new'><i className="fas fa-plus"></i></Link>
+        <h1 className="bikes mb-3">My Rides</h1>
+        <Link className="plusSign" to='/motorcycles/new'><i className="fas fa-plus mb-5"></i></Link>
         <div className="d-flex flex-wrap">
           {buildMotorcycleCards}
         </div>
