@@ -1,0 +1,25 @@
+@import '../../../styles/variables.scss';
+
+.MotorcycleCard {
+  display: block;
+}
+
+.card {
+  background-color: $primaryColor;
+  border: 2px solid $secondaryColor;
+}
+
+.bikeName {
+  color: $secondaryColor;
+}
+
+.bikeMileage {
+  color: $secondaryColor;
+}
+
+.singleView {
+  color: $secondaryColor;
+  border: 1px solid;
+  border-radius: 5px;
+  padding: 5px 10px;
+}
