@@ -13,7 +13,7 @@ class MotorcycleCard extends React.Component {
   render() {
     const { motorcycle } = this.props;
     return (
-      <div className="MotorcycleCard col-6">
+      <div className="MotorcycleCard col-4">
         <div className="card">
           <img src={motorcycle.imageUrl} className="card-img-top" alt="Motorcycle Pic"/>
           <div className="card-body">

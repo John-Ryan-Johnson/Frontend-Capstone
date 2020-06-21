@@ -31,8 +31,10 @@ class Motorcycles extends React.Component {
     ));
     return (
       <div>
-        <h1 className="bikes mb-3">My Rides</h1>
-        <Link className="plusSign" to='/motorcycles/new'><i className="fas fa-plus mb-5"></i></Link>
+        <h1 className="bikes mt-4 mb-3">My Rides</h1>
+        <div className="justify-content-end">
+          <Link to='/motorcycles/new'><i className="fas fa-plus fa-2x mb-5 plusSign"></i></Link>
+        </div>
         <div className="d-flex flex-wrap">
           {buildMotorcycleCards}
         </div>
