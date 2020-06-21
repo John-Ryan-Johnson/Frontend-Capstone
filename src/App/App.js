@@ -70,7 +70,7 @@ class App extends React.Component {
           <React.Fragment>
             <MyNavbar authed={authed}/>
             <div className="container">
-              <div className="row justify-content-center">
+              <div className="justify-content-center">
                 <Switch>
                   <PrivateRoute path='/motorcycles/edit/:motorcycleId' component={EditMotorcycle} authed={authed} />
                   <PrivateRoute path='/motorcycles/motorcycles/:motorcycleId' component={SingleMotorcycle} authed={authed} />
