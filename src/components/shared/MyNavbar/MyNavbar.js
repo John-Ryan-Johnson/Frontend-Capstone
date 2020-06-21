@@ -55,7 +55,7 @@ class MyNavbar extends React.Component {
     };
 
     return (
-      <div className="myNavbar">
+      <div className="myNavbar sticky-top">
         <Navbar color="black" dark expand="md">
           <NavbarBrand href="/"><img src={logo} className="myLogo" alt="logo"/></NavbarBrand>
           <NavbarToggler onClick={this.toggle} />
