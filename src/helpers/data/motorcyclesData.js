@@ -19,4 +19,6 @@ const getMotorcyclesByUid = (uid) => new Promise((resolve, reject) => {
     .catch((err) => reject(err));
 });
 
-export default { getMotorcyclesByUid };
+const getSingleMotorcycle = (motorcycleId) => axios.get(`${baseUrl}/motorcycles/${motorcycleId}.json`);
+
+export default { getMotorcyclesByUid, getSingleMotorcycle };
