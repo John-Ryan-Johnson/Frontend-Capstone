@@ -1,7 +1,11 @@
 @import '../styles/variables';
 
 .App {
-  text-align: center;
+ text-align: center;
+}
+
+.container {
+  max-width: 1920px;
 }
 
 
