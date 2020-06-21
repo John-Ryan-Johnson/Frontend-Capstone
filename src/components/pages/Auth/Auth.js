@@ -3,6 +3,7 @@ import firebase from 'firebase/app';
 import 'firebase/auth';
 
 import './Auth.scss';
+import authLogo from '../../../images/MotoWorx-auth.png';
 
 class Auth extends React.Component {
   loginClickEvent = (e) => {
@@ -14,8 +15,7 @@ class Auth extends React.Component {
   render() {
     return (
       <div className="Auth">
-        <h1>Auth</h1>
-        <button className="btn btn-info" onClick={this.loginClickEvent}>Google Login</button>
+        <img src={authLogo} className="login mt-5" onClick={this.loginClickEvent} alt="Google Login"/>
       </div>
     );
   }
