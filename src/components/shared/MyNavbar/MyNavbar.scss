@@ -1,3 +1,25 @@
+@import '../../../styles/variables.scss';
+
 .MyNavbar {
   display: block;
+  margin: 0;
+}
+
+.myNavbar {
+  border-bottom: 1px solid $secondaryColor;
+}
+
+.myLogo {
+  width: 100px;
+}
+
+.bikeIcon {
+  color: $secondaryColor;
+}
+
+.logoutBtn {
+  border: 1px solid;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
 }
