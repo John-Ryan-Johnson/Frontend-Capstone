@@ -1,3 +1,38 @@
+@import '../../../styles/variables.scss';
+
 .EditMotorcycle {
   display: block;
+}
+
+.editFormName {
+  color: $secondaryColor;
+  font-weight: 400;
+}
+
+label {
+  color: $secondaryColor;
+}
+
+.form-control {
+  background-color: $secondaryColor;
+  border: 1px solid $primaryColor;
+  color: $primaryColor;
+}
+
+.form-control:focus {
+  background-color: $secondaryColor;
+  border: 1px solid $primaryColor;
+  color: $primaryColor;
+}
+
+.updateBtn {
+  color: $secondaryColor;
+  border: 1px solid;
+  border-radius: 5px;
+  padding: 5px 10px;
+}
+
+.updateBtn:hover {
+  text-decoration: none;
+  color: $secondaryColor;
 }

@@ -25,9 +25,12 @@ const postMotorcycle = (newMotorcycle) => axios.post(`${baseUrl}/motorcycles.jso
 
 const deleteMotorcycle = (motorcycleId) => axios.delete(`${baseUrl}/motorcycles/${motorcycleId}.json`);
 
+const putMotorcycle = (motorcycleId, updatedMotorcycle) => axios.put(`${baseUrl}/motorcycles/${motorcycleId}.json`, updatedMotorcycle);
+
 export default {
   getMotorcyclesByUid,
   getSingleMotorcycle,
   postMotorcycle,
   deleteMotorcycle,
+  putMotorcycle,
 };
