@@ -14,6 +14,8 @@ class MotorcycleCard extends React.Component {
   render() {
     const { motorcycle, removeMotorcycle } = this.props;
     const singleLink = `/motorcycles/motorcycles/${motorcycle.id}`;
+    const editLink = `/motorcycles/edit/${motorcycle.id}`;
+
     return (
       <div className="MotorcycleCard col-4">
         <div className="card">
@@ -23,6 +25,7 @@ class MotorcycleCard extends React.Component {
             <p className="card-text bikeMileage">Mileage: {motorcycle.mileage}</p>
             <div>
               <Link className="singleView" style={{ textDecoration: 'none' }} to={singleLink}>View</Link>
+              <Link className="btn editBtn" to={editLink}><i className="fas fa-pencil-alt fa-2x"></i></Link>
               <button className="btn deleteBtn" onClick={() => removeMotorcycle(motorcycle.id)}><i className="fas fa-trash-alt fa-2x"></i></button>
             </div>
           </div>

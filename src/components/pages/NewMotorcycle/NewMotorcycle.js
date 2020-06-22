@@ -54,7 +54,7 @@ class NewMotorcycle extends React.Component {
 
     return (
       <div className="NewMotorcycle col-12">
-        <h1 className="form mt-5 mb-5">Motorcycle Form</h1>
+        <h1 className="formName mt-5 mb-5">Add Motorcycle Form</h1>
         <form className="col-6 offset-3">
           <div className="form-group">
             <label htmlFor="motorcycle-name">Name</label>

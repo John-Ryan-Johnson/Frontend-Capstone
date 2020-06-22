@@ -36,3 +36,16 @@
   text-decoration: none;
   color: $secondaryColor;
 }
+
+.editBtn {
+  position: absolute;
+  right: 40px;
+  bottom: 7px;
+  color: $secondaryColor;
+  padding: 5px 10px;
+}
+
+.editBtn:hover {
+  text-decoration: none;
+  color: $secondaryColor;
+}
