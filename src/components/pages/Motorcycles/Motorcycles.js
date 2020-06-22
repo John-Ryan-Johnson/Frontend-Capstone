@@ -24,10 +24,16 @@ class Motorcycles extends React.Component {
     this.getMotorcycles();
   }
 
+  removeMotorcycle = (motorcycleId) => {
+    motorcyclesData.deleteMotorcycle(motorcycleId)
+      .then(() => this.getMotorcycles())
+      .catch((err) => console.error('unable to delete motorcycle:', err));
+  }
+
   render() {
     const { motorcycles } = this.state;
     const buildMotorcycleCards = motorcycles.map((motorcycle) => (
-      <MotorcycleCard key={motorcycle.id} motorcycle={motorcycle}/>
+      <MotorcycleCard key={motorcycle.id} motorcycle={motorcycle} removeMotorcycle={this.removeMotorcycle}/>
     ));
     return (
       <div>
