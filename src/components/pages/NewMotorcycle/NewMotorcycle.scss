@@ -1,3 +1,37 @@
+@import '../../../styles/variables.scss';
+
 .NewMotorcycle {
   display: block;
+}
+
+.form {
+  color: $secondaryColor;
+}
+
+label {
+  color: $secondaryColor;
+}
+
+.form-control {
+  background-color: $secondaryColor;
+  border: 1px solid $primaryColor;
+  color: $primaryColor;
+}
+
+.form-control:focus {
+  background-color: $secondaryColor;
+  border: 1px solid $primaryColor;
+  color: $primaryColor;
+}
+
+.saveBtn {
+  color: $secondaryColor;
+  border: 1px solid;
+  border-radius: 5px;
+  padding: 5px 10px;
+}
+
+.saveBtn:hover {
+  text-decoration: none;
+  color: $secondaryColor;
 }
