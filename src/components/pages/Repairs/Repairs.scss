@@ -1,3 +1,15 @@
+@import '../../../styles/variables';
+
 .Repairs {
   display: block;
+}
+
+.repairs {
+  color: $secondaryColor;
+  font-weight: 400;
+}
+
+.plusSign {
+  color: $secondaryColor;
+  margin-right: 20px;
 }

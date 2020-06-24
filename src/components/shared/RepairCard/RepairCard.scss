@@ -1,0 +1,21 @@
+@import '../../../styles/variables';
+
+.RepairCard {
+  display: block;
+}
+
+.repairCard {
+  background-color: $primaryColor;
+  border: 2px solid $secondaryColor;
+}
+
+.repairName {
+  color: $secondaryColor;
+}
+
+.singleRepairView {
+  color: $secondaryColor;
+  border: 1px solid $secondaryColor;
+  border-radius: 5px;
+  padding: 5px 10px;
+}
