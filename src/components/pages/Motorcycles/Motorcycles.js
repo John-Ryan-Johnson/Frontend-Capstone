@@ -36,7 +36,7 @@ class Motorcycles extends React.Component {
       <MotorcycleCard key={motorcycle.id} motorcycle={motorcycle} removeMotorcycle={this.removeMotorcycle}/>
     ));
     return (
-      <div>
+      <div className="Motorcycles">
         <h1 className="bikes mt-4 mb-3">My Rides</h1>
         <div className="text-right mb-5">
           <Link to='/motorcycles/new'><i className="fas fa-plus fa-2x plusSign"></i></Link>

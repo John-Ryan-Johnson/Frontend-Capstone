@@ -5,7 +5,8 @@
     "isDone": true,
     "isMod": false,
     "mileage": 1000,
-    "motorcycleId": "motorcycle1"
+    "motorcycleId": "motorcycle1",
+    "uid": "2voYRLvxnjh503NFAyqgKgUk9ng1"
   },
   "repair2": {
     "name": "Air Cleaner",
@@ -13,7 +14,8 @@
     "isDone": false,
     "isMod": false,
     "mileage": 5000,
-    "motorcycleId": "motorcycle2"
+    "motorcycleId": "motorcycle2",
+    "uid": "2voYRLvxnjh503NFAyqgKgUk9ng1"
   },
   "repair3": {
     "name": "Seat",
@@ -21,7 +23,8 @@
     "isDone": false,
     "isMod": true,
     "mileage": 1000,
-    "motorcycleId": "motorcycle1"
+    "motorcycleId": "motorcycle1",
+    "uid": "2voYRLvxnjh503NFAyqgKgUk9ng1"
   },
   "repair4": {
     "name": "Steel Braided Brake Lines",
@@ -29,7 +32,8 @@
     "isDone": true,
     "isMod": true,
     "mileage": 3000,
-    "motorcycleId": "motorcycle2"
+    "motorcycleId": "motorcycle2",
+    "uid": "2voYRLvxnjh503NFAyqgKgUk9ng1"
   },
   "repair5": {
     "name": "Steel Braided Brake Lines",
@@ -37,7 +41,8 @@
     "isDone": false,
     "isMod": true,
     "mileage": 3000,
-    "motorcycleId": "motorcycle2"
+    "motorcycleId": "motorcycle2",
+    "uid": "2voYRLvxnjh503NFAyqgKgUk9ng1"
   },
   "repair6": {
     "name": "Air Cleaner",
@@ -45,6 +50,7 @@
     "isDone": false,
     "isMod": false,
     "mileage": 5000,
-    "motorcycleId": "motorcycle1"
+    "motorcycleId": "motorcycle1",
+    "uid": "2voYRLvxnjh503NFAyqgKgUk9ng1"
   }
 }

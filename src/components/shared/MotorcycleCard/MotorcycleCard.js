@@ -13,12 +13,12 @@ class MotorcycleCard extends React.Component {
 
   render() {
     const { motorcycle, removeMotorcycle } = this.props;
-    const singleLink = `/motorcycles/motorcycles/${motorcycle.id}`;
+    const singleLink = `/motorcycles/${motorcycle.id}`;
     const editLink = `/motorcycles/edit/${motorcycle.id}`;
 
     return (
       <div className="MotorcycleCard col-4">
-        <div className="card">
+        <div className="card bikeCard">
           <img src={motorcycle.imageUrl} className="card-img-top" alt="Motorcycle Pic"/>
           <div className="card-body">
             <h5 className="card-title bikeName">{motorcycle.name}</h5>

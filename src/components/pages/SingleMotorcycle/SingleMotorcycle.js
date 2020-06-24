@@ -18,8 +18,9 @@ class SingleMotorcycle extends React.Component {
 
   render() {
     const { motorcycle } = this.state;
-    const modsLink = '/mods';
-    const repairsLink = '/repairs';
+    const { motorcycleId } = this.props.match.params;
+    const modsLink = `/motorcycles/${motorcycleId}/mods`;
+    const repairsLink = `/motorcycles/${motorcycleId}/repairs`;
     return (
       <div className="SingleMotorcycle col-6 offset-3">
         <h1 className="singleBikeName mt-4 mb-4 text-center">{motorcycle.name}</h1>

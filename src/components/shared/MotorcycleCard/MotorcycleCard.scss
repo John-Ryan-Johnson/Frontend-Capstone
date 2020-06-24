@@ -1,10 +1,10 @@
-@import '../../../styles/variables.scss';
+@import '../../../styles/variables';
 
 .MotorcycleCard {
   display: block;
 }
 
-.card {
+.bikeCard {
   background-color: $primaryColor;
   border: 2px solid $secondaryColor;
 }
@@ -24,7 +24,7 @@
 
 .singleView {
   color: $secondaryColor;
-  border: 1px solid;
+  border: 1px solid $secondaryColor;
   border-radius: 5px;
   padding: 5px 10px;
 }
