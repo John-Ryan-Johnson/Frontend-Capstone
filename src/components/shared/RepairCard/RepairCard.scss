@@ -12,11 +12,13 @@
 
 .repairName {
   color: $secondaryColor;
+  font-weight: 400;
+  margin-top: 20%;
 }
 
 .singleRepairView {
-  color: $secondaryColor;
-  border: 1px solid $secondaryColor;
+  color: $primaryColor;
+  border: 1px solid $primaryColor;
   border-radius: 5px;
   padding: 5px 10px;
 }
@@ -63,6 +65,12 @@ h5 {
   border: 1px solid $primaryColor;
   border-radius: 5px;
   color: $secondaryColor;
+}
+
+label {
+  color: $primaryColor;
+  margin: 10px;
+  font-weight: 600;
 }
 
 .card-flip:hover .card-front {

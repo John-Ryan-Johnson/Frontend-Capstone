@@ -13,34 +13,36 @@ class RepairCard extends React.Component {
     const { repair } = this.props;
     const singleRepairLink = `/repairs/${repair.id}`;
     return (
-      <div className='container'>
-        <div className='row justify-content-center'>
-          <div className='RepairCard col-4'>
-            <div className='card repairCard card-flip'>
-              <div className='card-front'>
-                <div className='card-body'>
-                  <h3 className='card-title repairName'>{repair.name}</h3>
+      <div className='RepairCard col-4'>
+        <div className='card repairCard card-flip'>
+          <div className='card-front'>
+            <div className='card-body'>
+              <h2 className='card-title repairName'>{repair.name}</h2>
+            </div>
+          </div>
+          <div className='card-back'>
+            <div className='card-body'>
+              <div className='col-12'>
+                <div className='comment-container'>
+                  <h5>Comments</h5>
+                  <div className='repairComments text-left'>{repair.comments}</div>
                 </div>
-              </div>
-              <div className='card-back'>
-                <div className='card-body'>
-                  <div className="col-12">
-                    <div className="comment-container">
-                      <h5>Comments</h5>
-                      <div className="repairComments">{repair.comments}</div>
-                    </div>
-                    <div className="mileage-container">
-                      <h5 className="mt-2">Mileage</h5>
-                      <div className="repairMileage mt-3">{repair.mileage}</div>
-                    </div>
-                  </div>
+                <div className='mileage-container'>
+                  <h5 className='mt-2'>Mileage</h5>
+                  <div className='repairMileage text-left mt-3'>{repair.mileage}</div>
+                </div>
+                <div className='checkbox-container'>
+                  <input type='checkbox' checked={repair.isDone}/>
+                  <label htmlFor='done'>Done</label>
+                </div>
+                <div className="div mt-4">
+                  <Link className="singleRepairView" style={{ textDecoration: 'none' }} to={singleRepairLink}>View</Link>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-
     );
   }
 }
