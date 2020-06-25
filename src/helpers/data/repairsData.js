@@ -18,7 +18,6 @@ const getRepairsByMotorcycleId = (motorcycleId) => new Promise((resolve, reject)
         });
       }
       resolve(repairs);
-      console.log(repairs);
     })
     .catch((err) => reject(err));
 });
@@ -43,4 +42,6 @@ const getModsByMotorcycleId = (motorcycleId) => new Promise((resolve, reject) =>
     .catch((err) => reject(err));
 });
 
-export default { getRepairsByMotorcycleId, getModsByMotorcycleId };
+const getSingleRepair = (repairId) => axios.get(`${baseUrl}/repairs/${repairId}.json`);
+
+export default { getRepairsByMotorcycleId, getModsByMotorcycleId, getSingleRepair };
