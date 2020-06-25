@@ -1,3 +1,54 @@
+@import '../../../styles/variables';
+
 .SingleRepair {
   display: block;
+}
+
+.singleRepairName {
+  color: $secondaryColor;
+  font-weight: 400;
+}
+
+.singleRepairCard {
+  background-color: $primaryColor;
+  border: 2px solid $secondaryColor;
+  height: 45rem;
+}
+
+h3 {
+  color: $secondaryColor;
+}
+
+.singleRepairComments {
+  background-color: $secondaryColor;
+  border: 1px solid $primaryColor;
+  border-radius: 5px;
+  color: $primaryColor;
+  font-size: 24px;
+  height: 20rem;
+}
+
+.singleRepairMileage {
+  background-color: $secondaryColor;
+  border: 1px solid $primaryColor;
+  border-radius: 5px;
+  color: $primaryColor;
+  font-size: 24px;
+  padding-top: 20px;
+  height: 5rem;
+}
+
+.singleRepair-checkbox-container label {
+  color: $secondaryColor;
+  margin: 30px;
+  font-weight: 400;
+  font-size: 2rem;
+}
+
+.backBtn {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  color: $secondaryColor;
+
 }
