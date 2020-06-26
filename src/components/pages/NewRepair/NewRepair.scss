@@ -1,3 +1,26 @@
+@import '../../../styles/variables';
+
 .NewRepair {
   display: block;
+}
+
+.repairFormName {
+  color: $secondaryColor;
+  font-weight: 400;
+}
+
+label {
+  color: $secondaryColor;
+}
+
+.saveRepairBtn {
+  color: $secondaryColor;
+  border: 1px solid;
+  border-radius: 5px;
+  padding: 5px 10px;
+}
+
+.saveRepairBtn:hover {
+  text-decoration: none;
+  color: $secondaryColor;
 }

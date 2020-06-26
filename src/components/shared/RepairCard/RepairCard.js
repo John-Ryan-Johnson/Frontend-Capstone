@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 
 import repairShape from '../../../helpers/propz/repairShape';
@@ -7,10 +8,11 @@ import './RepairCard.scss';
 class RepairCard extends React.Component {
   static propTypes = {
     repair: repairShape.repairShape,
-  };
+    removeRepair: PropTypes.func.isRequired,
+  }
 
   render() {
-    const { repair } = this.props;
+    const { repair, removeRepair } = this.props;
     const singleRepairLink = `/repairs/${repair.id}`;
     return (
       <div className='RepairCard col-4'>
@@ -37,6 +39,7 @@ class RepairCard extends React.Component {
                 </div>
                 <div className="div mt-4">
                   <Link className="singleRepairView" style={{ textDecoration: 'none' }} to={singleRepairLink}>View</Link>
+                  <button className="btn deleteRepairBtn" onClick={() => removeRepair(repair.id)}><i className="fas fa-trash-alt fa-2x"></i></button>
                 </div>
               </div>
             </div>

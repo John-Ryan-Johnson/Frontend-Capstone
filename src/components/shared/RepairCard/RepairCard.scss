@@ -67,10 +67,23 @@ h5 {
   color: $secondaryColor;
 }
 
-label {
+.checkbox-container label {
   color: $primaryColor;
   margin: 10px;
   font-weight: 600;
+}
+
+.deleteRepairBtn {
+  position: absolute;
+  right: 0;
+  bottom: 2px;
+  color: $primaryColor;
+
+}
+
+.deleteRepairBtn:hover {
+  text-decoration: none;
+  color: $primaryColor;
 }
 
 .card-flip:hover .card-front {

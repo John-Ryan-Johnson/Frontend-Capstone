@@ -44,4 +44,14 @@ const getModsByMotorcycleId = (motorcycleId) => new Promise((resolve, reject) =>
 
 const getSingleRepair = (repairId) => axios.get(`${baseUrl}/repairs/${repairId}.json`);
 
-export default { getRepairsByMotorcycleId, getModsByMotorcycleId, getSingleRepair };
+const postRepair = (newRepair) => axios.post(`${baseUrl}/repairs.json`, newRepair);
+
+const deleteRepair = (repairId) => axios.delete(`${baseUrl}/repairs/${repairId}.json`);
+
+export default {
+  getRepairsByMotorcycleId,
+  getModsByMotorcycleId,
+  getSingleRepair,
+  postRepair,
+  deleteRepair,
+};
