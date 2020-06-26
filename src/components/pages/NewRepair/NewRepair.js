@@ -40,6 +40,7 @@ class NewRepair extends React.Component {
 
   saveRepair = (e) => {
     e.preventDefault();
+    const { motorcycleId } = this.props.match.params;
     const {
       repairName,
       repairComments,
@@ -48,7 +49,6 @@ class NewRepair extends React.Component {
       repairIsMod,
     } = this.state;
 
-    const { motorcycleId } = this.props.match.params;
     const newRepair = {
       motorcycleId,
       name: repairName,
