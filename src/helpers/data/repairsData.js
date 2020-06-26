@@ -48,10 +48,13 @@ const postRepair = (newRepair) => axios.post(`${baseUrl}/repairs.json`, newRepai
 
 const deleteRepair = (repairId) => axios.delete(`${baseUrl}/repairs/${repairId}.json`);
 
+const putRepair = (repairId, updatedRepair) => axios.put(`${baseUrl}/repairs/${repairId}.json`, updatedRepair);
+
 export default {
   getRepairsByMotorcycleId,
   getModsByMotorcycleId,
   getSingleRepair,
   postRepair,
   deleteRepair,
+  putRepair,
 };

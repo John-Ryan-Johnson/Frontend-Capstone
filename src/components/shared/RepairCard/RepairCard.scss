@@ -23,6 +23,11 @@
   padding: 5px 10px;
 }
 
+.singleRepairView:hover {
+  background-color: $primaryColor;
+  color: $secondaryColor;
+}
+
 .card-flip > div {
   backface-visibility: hidden;
   transition: transform 300ms;
@@ -82,6 +87,18 @@ h5 {
 }
 
 .deleteRepairBtn:hover {
+  text-decoration: none;
+  color: $primaryColor;
+}
+
+.editRepairBtn {
+  position: absolute;
+  right: 40px;
+  bottom: 2px;
+  color: $primaryColor;
+}
+
+.editRepairBtn:hover {
   text-decoration: none;
   color: $primaryColor;
 }
