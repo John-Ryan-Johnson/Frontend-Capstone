@@ -9,8 +9,8 @@ class NewRepair extends React.Component {
     repairName: '',
     repairComments: '',
     repairMileage: 0,
-    repairIsDone: 'false',
-    repairIsMod: 'false',
+    repairIsDone: false,
+    repairIsMod: false,
   }
 
   nameChange = (e) => {
@@ -47,7 +47,10 @@ class NewRepair extends React.Component {
       repairIsDone,
       repairIsMod,
     } = this.state;
+
+    const { motorcycleId } = this.props.match.params;
     const newRepair = {
+      motorcycleId,
       name: repairName,
       comments: repairComments,
       mileage: repairMileage,
@@ -55,7 +58,7 @@ class NewRepair extends React.Component {
       isMod: repairIsMod,
     };
     repairsData.postRepair(newRepair)
-      .then(() => this.props.history.push('/repairs'))
+      .then(() => this.props.history.push(`/motorcycles/${motorcycleId}/repairs`))
       .catch((err) => console.error('unable to save repair:', err));
   }
 
@@ -104,7 +107,7 @@ class NewRepair extends React.Component {
           <div className="form-group form-check">
             <input
              type="checkbox"
-             className="form-check-input mt-3"
+             className="form-check-input"
              id="repair-isDone"
              value={repairIsDone}
              onChange={this.isDoneChange}
@@ -114,7 +117,7 @@ class NewRepair extends React.Component {
           <div className="form-group form-check">
             <input
              type="checkbox"
-             className="form-check-input mt-3"
+             className="form-check-input"
              id="repair-isMod"
              value={repairIsMod}
              onChange={this.isModChange}

@@ -14,7 +14,7 @@ class Repairs extends React.Component {
     repairs: [],
   }
 
-  componentDidMount() {
+  getMotorcycleWithRepair = () => {
     const { motorcycleId } = this.props.match.params;
     motorcyclesData.getSingleMotorcycle(motorcycleId)
       .then((response) => this.setState({ motorcycle: response.data }))
@@ -24,10 +24,20 @@ class Repairs extends React.Component {
       .catch((err) => console.error('unable to get repairs for this motorcycle:', err));
   }
 
+  componentDidMount() {
+    this.getMotorcycleWithRepair();
+  }
+
+  removeRepair = (repairId) => {
+    repairsData.deleteRepair(repairId)
+      .then(() => this.getMotorcycleWithRepair())
+      .catch((err) => console.error('unable to delete repair:', err));
+  }
+
   render() {
     const { repairs } = this.state;
     const buildRepairCards = repairs.map((repair) => (
-      <RepairCard key={repair.id} repair={repair}/>
+      <RepairCard key={repair.id} repair={repair} removeRepair={this.removeRepair}/>
     ));
     return (
       <div className="Repairs">
