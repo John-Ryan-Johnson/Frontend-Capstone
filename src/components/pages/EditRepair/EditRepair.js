@@ -11,15 +11,20 @@ class EditRepair extends React.Component {
     repairMileage: 0,
     repairIsDone: false,
     repairIsMod: false,
-  }
+  };
 
   componentDidMount() {
     const editId = this.props.match.params.repairId;
-    repairsData.getSingleRepair(editId)
+    repairsData
+      .getSingleRepair(editId)
       .then((response) => {
         const repair = response.data;
         this.setState({
-          repairName: repair.name, repairComments: repair.comments, repairMileage: repair.mileage, repairIsDone: repair.isDone, repairIsMod: repair.isMod,
+          repairName: repair.name,
+          repairComments: repair.comments,
+          repairMileage: repair.mileage,
+          repairIsDone: repair.isDone,
+          repairIsMod: repair.isMod,
         });
       })
       .catch((err) => console.error('unable to get repair to edit:', err));
@@ -28,27 +33,27 @@ class EditRepair extends React.Component {
   nameChange = (e) => {
     e.preventDefault();
     this.setState({ repairName: e.target.value });
-  }
+  };
 
   commentChange = (e) => {
     e.preventDefault();
     this.setState({ repairComments: e.target.value });
-  }
+  };
 
   mileageChange = (e) => {
     e.preventDefault();
     this.setState({ repairMileage: e.target.value });
-  }
+  };
 
   isDoneChange = (e) => {
     e.preventDefault();
     this.setState({ repairIsDone: e.target.checked });
-  }
+  };
 
   isModChange = (e) => {
     e.preventDefault();
     this.setState({ repairIsMod: e.target.checked });
-  }
+  };
 
   updateRepair = (e) => {
     e.preventDefault();
@@ -71,10 +76,11 @@ class EditRepair extends React.Component {
       repairId,
       motorcycleId,
     };
-    repairsData.putRepair(repairId, updatedRepair)
+    repairsData
+      .putRepair(repairId, updatedRepair)
       .then(() => this.props.history.push(`/motorcycles/${motorcycleId}/repairs`))
       .catch((err) => console.error('unable to save repair:', err));
-  }
+  };
 
   render() {
     const {
@@ -86,60 +92,70 @@ class EditRepair extends React.Component {
     } = this.state;
 
     return (
-      <div className="EditRepair col-12">
-        <h1 className="editRepairFormName mt-5 mb-5">Edit Repair Form</h1>
-        <form className="col-6 offset-3">
-          <div className="form-group">
-            <label htmlFor="repair-name">Name</label>
+      <div className='EditRepair col-12'>
+        <h1 className='editRepairFormName mt-5 mb-5'>Edit Repair Form</h1>
+        <form className='col-6 offset-3'>
+          <div className='form-group'>
+            <label htmlFor='repair-name'>Name</label>
             <input
-             type="text"
-             className="form-control"
-             id="repair-name"
-             value={repairName}
-             onChange={this.nameChange}
-             />
+              type='text'
+              className='form-control'
+              id='repair-name'
+              value={repairName}
+              onChange={this.nameChange}
+            />
           </div>
-          <div className="form-group">
-            <label htmlFor="repair-comments">Comments</label>
+          <div className='form-group'>
+            <label htmlFor='repair-comments'>Comments</label>
             <input
-             type="text"
-             className="form-control"
-             id="repair-comments"
-             value={repairComments}
-             onChange={this.commentChange}
-             />
+              type='text'
+              className='form-control'
+              id='repair-comments'
+              value={repairComments}
+              onChange={this.commentChange}
+            />
           </div>
-          <div className="form-group">
-            <label htmlFor="repair-mileage">Mileage</label>
+          <div className='form-group'>
+            <label htmlFor='repair-mileage'>Mileage</label>
             <input
-             type="number"
-             className="form-control"
-             id="repair-mileage"
-             value={repairMileage}
-             onChange={this.mileageChange}
-             />
+              type='number'
+              className='form-control'
+              id='repair-mileage'
+              value={repairMileage}
+              onChange={this.mileageChange}
+            />
           </div>
-          <div className="form-group form-check">
-            <input
-             type="checkbox"
-             className="form-check-input"
-             id="repair-isDone"
-             value={repairIsDone}
-             onChange={this.isDoneChange}
-             />
-             <label className="form-check-label" htmlFor="repair-isDone">Done</label>
+          <div className='d-flex flex-wrap justify-content-around'>
+            <div className='form-group form-check'>
+              <input
+                type='checkbox'
+                className='form-check-input'
+                id='repair-isDone'
+                value={repairIsDone}
+                onChange={this.isDoneChange}
+              />
+              <label className='form-check-label' htmlFor='repair-isDone'>
+                Done
+              </label>
+            </div>
+            <div className='form-group form-check'>
+              <input
+                type='checkbox'
+                className='form-check-input'
+                id='repair-isMod'
+                value={repairIsMod}
+                onChange={this.isModChange}
+              />
+              <label className='form-check-label' htmlFor='repair-isMod'>
+                Mod
+              </label>
+            </div>
           </div>
-          <div className="form-group form-check">
-            <input
-             type="checkbox"
-             className="form-check-input"
-             id="repair-isMod"
-             value={repairIsMod}
-             onChange={this.isModChange}
-             />
-             <label className="form-check-label" htmlFor="repair-isMod">Mod</label>
-          </div>
-          <button className="btn updateRepairBtn mt-3" onClick={this.updateRepair}>Save</button>
+          <button
+            className='btn updateRepairBtn mt-3'
+            onClick={this.updateRepair}>
+            Save
+          </button>
         </form>
       </div>
     );
