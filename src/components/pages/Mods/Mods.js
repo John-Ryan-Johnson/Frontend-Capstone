@@ -11,7 +11,7 @@ import './Mods.scss';
 class Mods extends React.Component {
   state = {
     motorcycle: {},
-    mods: [],
+    repairs: [],
   }
 
   getMotorcycleWithMod = () => {
@@ -20,8 +20,8 @@ class Mods extends React.Component {
       .then((response) => this.setState({ motorcycle: response.data }))
       .catch((err) => console.error('unable to get single motorcycle:', err));
     repairsData.getModsByMotorcycleId(motorcycleId)
-      .then((mods) => this.setState({ mods }))
-      .catch((err) => console.error('unable to get modss for this motorcycle:', err));
+      .then((repairs) => this.setState({ repairs }))
+      .catch((err) => console.error('unable to get mods for this motorcycle:', err));
   }
 
   componentDidMount() {
@@ -29,9 +29,9 @@ class Mods extends React.Component {
   }
 
   render() {
-    const { mods } = this.state;
-    const buildModCards = mods.map((mod) => (
-      <ModCard key={mod.id} mod={mod}/>
+    const { repairs } = this.state;
+    const buildModCards = repairs.map((repair) => (
+      <ModCard key={repair.id} repair={repair}/>
     ));
     return (
       <div className="Mods">

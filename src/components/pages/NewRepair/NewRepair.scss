@@ -9,7 +9,11 @@
   font-weight: 400;
 }
 
-label {
+.isDone {
+  color: $secondaryColor;
+}
+
+.isMod {
   color: $secondaryColor;
 }
 

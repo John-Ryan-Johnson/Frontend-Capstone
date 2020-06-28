@@ -22,16 +22,16 @@
   color: $secondaryColor;
 }
 
-.singleView {
+.singleModView {
   color: $secondaryColor;
   border: 1px solid $secondaryColor;
   border-radius: 5px;
   padding: 5px 10px;
 }
 
-.singleView:hover {
-  background-color: $secondaryColor;
-  color: $primaryColor;
+.singleModView:hover {
+  background-color: $primaryColor;
+  color: $secondaryColor;
 }
 
 .deleteBtn {

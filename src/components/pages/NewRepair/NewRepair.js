@@ -124,7 +124,7 @@ class NewRepair extends React.Component {
                 value={repairIsDone}
                 onChange={this.isDoneChange}
               />
-              <label className='form-check-label' htmlFor='repair-isDone'>
+              <label className='form-check-label isDone' htmlFor='repair-isDone'>
                 Done
               </label>
             </div>
@@ -136,7 +136,7 @@ class NewRepair extends React.Component {
                 value={repairIsMod}
                 onChange={this.isModChange}
               />
-              <label className='form-check-label' htmlFor='repair-isMod'>
+              <label className='form-check-label isMod' htmlFor='repair-isMod'>
                 Mod
               </label>
             </div>
