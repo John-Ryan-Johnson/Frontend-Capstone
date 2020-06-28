@@ -3,9 +3,11 @@
 .MyNavbar {
   display: block;
   margin: 0;
+  z-index: 999;
 }
 
 .myNavbar {
+  background-color: $primaryColor;
   border-bottom: 1px solid $secondaryColor;
 }
 
@@ -17,9 +19,17 @@
   color: $secondaryColor;
 }
 
-.logoutBtn {
+a.logoutBtn {
   border: 1px solid;
   border-radius: 5px;
   padding: 5px 10px;
   cursor: pointer;
+  background-color: $primaryColor;
+  color: $secondaryColor;
 }
+
+a.logoutBtn:hover {
+  background-color: $secondaryColor;
+  color: $primaryColor;
+}
+

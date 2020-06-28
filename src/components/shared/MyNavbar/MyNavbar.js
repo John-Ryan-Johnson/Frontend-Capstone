@@ -46,7 +46,7 @@ class MyNavbar extends React.Component {
               <NavLink tag={RRNavLink} to='/motorcycles'><i className="fas fa-motorcycle fa-2x mr-5 bikeIcon"></i></NavLink>
             </NavItem>
             <NavItem>
-              <NavLink className="logoutBtn" style={{ color: '#a36f2a' }} onClick={this.logMeOut}>Logout</NavLink>
+              <NavLink className="logoutBtn" onClick={this.logMeOut}>Logout</NavLink>
             </NavItem>
           </Nav>
         );
@@ -56,7 +56,7 @@ class MyNavbar extends React.Component {
 
     return (
       <div className="myNavbar sticky-top">
-        <Navbar color="black" dark expand="md">
+        <Navbar color="black" expand="md">
           <NavbarBrand href="/"><img src={logo} className="myLogo" alt="logo"/></NavbarBrand>
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={isOpen} navbar>

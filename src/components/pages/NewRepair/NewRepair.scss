@@ -22,5 +22,6 @@ label {
 
 .saveRepairBtn:hover {
   text-decoration: none;
-  color: $secondaryColor;
+  background-color: $secondaryColor;
+  color: $primaryColor;
 }

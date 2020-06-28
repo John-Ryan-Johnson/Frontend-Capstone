@@ -4,6 +4,20 @@
   display: block;
 }
 
+.card-flip > div {
+  backface-visibility: hidden;
+  transition: transform 300ms;
+  transition-timing-function: linear;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  display: flex;
+}
+
+.card-front {
+  transform: rotateY(0deg);
+}
+
 .repairCard {
   background-color: $primaryColor;
   border: 2px solid $secondaryColor;
@@ -23,24 +37,15 @@
   padding: 5px 10px;
 }
 
-.card-flip > div {
-  backface-visibility: hidden;
-  transition: transform 300ms;
-  transition-timing-function: linear;
-  width: 100%;
-  height: 100%;
-  margin: 0;
-  display: flex;
-}
-
-.card-front {
-  transform: rotateY(0deg);
+.singleRepairView:hover {
+  background-color: $primaryColor;
+  color: $secondaryColor;
 }
 
 .card-back {
   transform: rotateY(180deg);
   position: absolute;
-  top: 0;
+  top: 0; right: 0; bottom: 0; left: 0;
   background-color: $secondaryColor;
 }
 
@@ -75,13 +80,25 @@ h5 {
 
 .deleteRepairBtn {
   position: absolute;
+  top: 92%;
   right: 0;
-  bottom: 2px;
   color: $primaryColor;
 
 }
 
 .deleteRepairBtn:hover {
+  text-decoration: none;
+  color: $primaryColor;
+}
+
+.editRepairBtn {
+  position: absolute;
+  top: 92%;
+  right: 7%;
+  color: $primaryColor;
+}
+
+.editRepairBtn:hover {
   text-decoration: none;
   color: $primaryColor;
 }

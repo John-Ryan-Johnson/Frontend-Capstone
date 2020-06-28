@@ -29,6 +29,11 @@
   padding: 5px 10px;
 }
 
+.singleView:hover {
+  background-color: $secondaryColor;
+  color: $primaryColor;
+}
+
 .deleteBtn {
   position: absolute;
   right: 0;
