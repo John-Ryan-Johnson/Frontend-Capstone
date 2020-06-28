@@ -14,10 +14,10 @@ class RepairCard extends React.Component {
   render() {
     const { repair, removeRepair } = this.props;
     const singleRepairLink = `/repairs/${repair.id}`;
-    const editLink = `/repairs/edit/${repair.id}`;
+    const repairEditLink = `/repairs/edit/${repair.id}`;
     return (
       <div className='RepairCard col-4'>
-        <div className='card repairCard card-flip'>
+        <div className='card repairCard card-flip mt-3'>
           <div className='card-front'>
             <div className='card-body'>
               <h2 className='card-title repairName'>{repair.name}</h2>
@@ -40,7 +40,7 @@ class RepairCard extends React.Component {
                 </div>
                 <div className="div mt-4">
                   <Link className="singleRepairView" style={{ textDecoration: 'none' }} to={singleRepairLink}>View</Link>
-                  <Link className="btn editRepairBtn" to={editLink}><i className="fas fa-pencil-alt fa-2x"></i></Link>
+                  <Link className="btn editRepairBtn" to={repairEditLink}><i className="fas fa-pencil-alt fa-2x"></i></Link>
                   <button className="btn deleteRepairBtn" onClick={() => removeRepair(repair.id)}><i className="fas fa-trash-alt fa-2x"></i></button>
                 </div>
               </div>
