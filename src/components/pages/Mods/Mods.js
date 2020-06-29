@@ -28,12 +28,18 @@ class Mods extends React.Component {
     this.getMotorcycleWithMod();
   }
 
+  removeRepair = (repairId) => {
+    repairsData.deleteRepair(repairId)
+      .then(() => this.getMotorcycleWithMod())
+      .catch((err) => console.error('unable to delete repair:', err));
+  }
+
   render() {
     const { motorcycleId } = this.props.match.params;
     const newRepairLink = `/repairs/${motorcycleId}/new`;
     const { repairs } = this.state;
     const buildModCards = repairs.map((repair) => (
-      <ModCard key={repair.id} repair={repair}/>
+      <ModCard key={repair.id} repair={repair} removeRepair={this.removeRepair}/>
     ));
     return (
       <div className="Mods">
