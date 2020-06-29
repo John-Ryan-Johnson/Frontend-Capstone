@@ -1,3 +1,47 @@
+@import '../../../styles/variables';
+
 .SingleMod {
   display: block;
 }
+
+.singleModName {
+  color: $secondaryColor;
+  font-weight: 400;
+}
+
+.singleModCard {
+  background-color: $primaryColor;
+  border: 2px solid $secondaryColor;
+  height: 45rem;
+}
+
+h3 {
+  color: $secondaryColor;
+}
+
+.singleModComments {
+  background-color: $secondaryColor;
+  border: 1px solid $primaryColor;
+  border-radius: 5px;
+  color: $primaryColor;
+  font-size: 24px;
+  height: 20rem;
+}
+
+.singleModMileage {
+  background-color: $secondaryColor;
+  border: 1px solid $primaryColor;
+  border-radius: 5px;
+  color: $primaryColor;
+  font-size: 24px;
+  padding-top: 20px;
+  height: 5rem;
+}
+
+.singleMod-checkbox-container label {
+  color: $secondaryColor;
+  margin: 30px;
+  font-weight: 400;
+  font-size: 2rem;
+}
+
