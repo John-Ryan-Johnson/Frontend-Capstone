@@ -3,9 +3,11 @@
 .MyNavbar {
   display: block;
   margin: 0;
+  z-index: 999;
 }
 
 .myNavbar {
+  background-color: $primaryColor;
   border-bottom: 1px solid $secondaryColor;
 }
 
