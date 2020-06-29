@@ -29,6 +29,8 @@ class Mods extends React.Component {
   }
 
   render() {
+    const { motorcycleId } = this.props.match.params;
+    const newRepairLink = `/repairs/${motorcycleId}/new`;
     const { repairs } = this.state;
     const buildModCards = repairs.map((repair) => (
       <ModCard key={repair.id} repair={repair}/>
@@ -37,7 +39,7 @@ class Mods extends React.Component {
       <div className="Mods">
         <h1 className="mods mt-4 mb-3">Mods</h1>
         <div className="text-right mb-5">
-          <Link to='/repairs/new'><i className="fas fa-plus fa-2x plusSign"></i></Link>
+          <Link to={newRepairLink}><i className="fas fa-plus fa-2x plusSign"></i></Link>
         </div>
         <div className="d-flex flex-wrap">
           {buildModCards}

@@ -23,6 +23,11 @@
   padding: 5px 10px;
 }
 
+.singleModView:hover {
+  background-color: $primaryColor;
+  color: $secondaryColor;
+}
+
 .card-flip > div {
   backface-visibility: hidden;
   transition: transform 300ms;

@@ -40,8 +40,8 @@
     "comments": "dealer performed mod",
     "isDone": false,
     "isMod": true,
-    "mileage": 3000,
-    "motorcycleId": "motorcycle2",
+    "mileage": 2500,
+    "motorcycleId": "motorcycle1",
     "uid": "2voYRLvxnjh503NFAyqgKgUk9ng1"
   },
   "repair6": {

@@ -119,7 +119,7 @@ class NewRepair extends React.Component {
             <div className='form-group form-check'>
               <input
                 type='checkbox'
-                className='form-check-input'
+                className='form-check-input mt-3'
                 id='repair-isDone'
                 value={repairIsDone}
                 onChange={this.isDoneChange}
@@ -131,7 +131,7 @@ class NewRepair extends React.Component {
             <div className='form-group form-check'>
               <input
                 type='checkbox'
-                className='form-check-input'
+                className='form-check-input mt-3'
                 id='repair-isMod'
                 value={repairIsMod}
                 onChange={this.isModChange}

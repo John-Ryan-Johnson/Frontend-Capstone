@@ -35,8 +35,8 @@ class ModCard extends React.Component {
                   <div className='modMileage text-left mt-3'>{repair.mileage}</div>
                 </div>
                 <div className='mod-checkbox-container'>
-                  <input type='checkbox' checked={repair.isMod}/>
-                  <label htmlFor='mod'>Mod</label>
+                  <input type='checkbox' checked={repair.isDone}/>
+                  <label htmlFor='mod'>Done</label>
                 </div>
                 <div className="div mt-4">
                   <Link className="singleModView" style={{ textDecoration: 'none' }} to={singleModLink}>View</Link>
