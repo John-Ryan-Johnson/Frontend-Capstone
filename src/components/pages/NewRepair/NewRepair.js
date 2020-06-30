@@ -68,7 +68,13 @@ class NewRepair extends React.Component {
       motorcycleId,
     };
     repairsData.postRepair(newRepair)
-      .then(() => this.props.history.push(`/motorcycles/${motorcycleId}/repairs`))
+      .then(() => {
+        if (repairIsMod) {
+          this.props.history.push(`/motorcycles/${motorcycleId}/mods`);
+        } else {
+          this.props.history.push(`/motorcycles/${motorcycleId}/repairs`);
+        }
+      })
       .catch((err) => console.error('unable to save repair:', err));
   };
 
