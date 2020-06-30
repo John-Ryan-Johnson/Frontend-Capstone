@@ -6,10 +6,12 @@ const completelyRemoveMotorcycle = (motorcycleId) => new Promise((resolve, rejec
     .then(() => {
       repairsData.getRepairsByMotorcycleId(motorcycleId)
         .then((repairs) => {
-          repairsData.getModsByMotorcycleId(motorcycleId)
+          repairs.forEach((repair) => repairsData.deleteRepair(repair.id))
             .then(() => {
-              repairs.forEach((repair) => repairsData.deleteRepair(repair.id));
-              repairs.forEach((repair) => repairsData.deleteRepair(repair.id));
+              repairsData.getModsByMotorcycleId(motorcycleId)
+                .then(() => {
+                  repairs.forEach((repair) => repairsData.deleteRepair(repair.id));
+                });
               resolve();
             });
         });
