@@ -15,8 +15,7 @@ class EditRepair extends React.Component {
 
   componentDidMount() {
     const editId = this.props.match.params.repairId;
-    repairsData
-      .getSingleRepair(editId)
+    repairsData.getSingleRepair(editId)
       .then((response) => {
         const repair = response.data;
         this.setState({
@@ -78,7 +77,13 @@ class EditRepair extends React.Component {
     };
     repairsData
       .putRepair(repairId, updatedRepair)
-      .then(() => this.props.history.push(`/motorcycles/${motorcycleId}/repairs`))
+      .then(() => {
+        if (repairIsMod) {
+          this.props.history.push(`/motorcycles/${motorcycleId}/mods`);
+        } else {
+          this.props.history.push(`/motorcycles/${motorcycleId}/repairs`);
+        }
+      })
       .catch((err) => console.error('unable to save repair:', err));
   };
 
@@ -132,6 +137,7 @@ class EditRepair extends React.Component {
                 className='form-check-input mt-3'
                 id='repair-isDone'
                 value={repairIsDone}
+                checked={repairIsDone}
                 onChange={this.isDoneChange}
               />
               <label className='form-check-label' htmlFor='repair-isDone'>
@@ -144,6 +150,7 @@ class EditRepair extends React.Component {
                 className='form-check-input mt-3'
                 id='repair-isMod'
                 value={repairIsMod}
+                checked={repairIsMod}
                 onChange={this.isModChange}
               />
               <label className='form-check-label' htmlFor='repair-isMod'>

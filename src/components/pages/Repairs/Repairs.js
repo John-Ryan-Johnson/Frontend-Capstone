@@ -36,7 +36,7 @@ class Repairs extends React.Component {
 
   render() {
     const { motorcycleId } = this.props.match.params;
-    const newRepairLink = `/repairs/${motorcycleId}/new`;
+    const newRepairLink = `/motorcycles/${motorcycleId}/repairs/new`;
     const { repairs } = this.state;
     const buildRepairCards = repairs.map((repair) => (
       <RepairCard key={repair.id} repair={repair} removeRepair={this.removeRepair}/>

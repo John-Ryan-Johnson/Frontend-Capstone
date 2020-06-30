@@ -75,11 +75,11 @@ class App extends React.Component {
                   <PrivateRoute path='/motorcycles/new' component={NewMotorcycle} authed={authed} />
                   <PrivateRoute path='/motorcycles/edit/:motorcycleId' component={EditMotorcycle} authed={authed} />
                   <PrivateRoute path='/motorcycles/:motorcycleId/mods' component={Mods} authed={authed}/>
+                  <PrivateRoute path='/motorcycles/:motorcycleId/repairs/new' component={NewRepair} authed={authed}/>
+                  <PrivateRoute path='/motorcycles/:motorcycleId/repairs/:repairId/edit' component={EditRepair} authed={authed}/>
                   <PrivateRoute path='/motorcycles/:motorcycleId/repairs' component={Repairs} authed={authed}/>
                   <PrivateRoute path='/motorcycles/:motorcycleId' component={SingleMotorcycle} authed={authed} />
                   <PrivateRoute path='/motorcycles' component={Motorcycles} authed={authed} />
-                  <PrivateRoute path='/repairs/edit/:repairId' component={EditRepair} authed={authed}/>
-                  <PrivateRoute path='/repairs/:motorcycleId/new' component={NewRepair} authed={authed}/>
                   <PrivateRoute path='/repairs/:repairId' component={SingleRepair} authed={authed}/>
                   <PrivateRoute path='/mods/:repairId' component={SingleMod} authed={authed}/>
                   <PublicRoute path='/auth' component={Auth} authed={authed} />

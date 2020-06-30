@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Link } from 'react-router-dom';
+import { Link, withRouter } from 'react-router-dom';
 
 import repairShape from '../../../helpers/propz/repairShape';
 import './ModCard.scss';
@@ -12,9 +12,10 @@ class ModCard extends React.Component {
   };
 
   render() {
+    const { motorcycleId } = this.props.match.params;
     const { repair, removeRepair } = this.props;
     const singleModLink = `/mods/${repair.id}`;
-    const editLink = `/repairs/edit/${repair.id}`;
+    const editLink = `/motorcycles/${motorcycleId}/repairs/${repair.id}/edit`;
     return (
       <div className='ModCard col-4'>
         <div className='card modCard card-flip'>
@@ -52,4 +53,4 @@ class ModCard extends React.Component {
   }
 }
 
-export default ModCard;
+export default withRouter(ModCard);
