@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom';
 import authData from '../../../helpers/data/authData';
 import motorcyclesData from '../../../helpers/data/motorcyclesData';
 import MotorcycleCard from '../../shared/MotorcycleCard/MotorcycleCard';
+import smash from '../../../helpers/data/smash';
 
 import './Motorcycles.scss';
 
@@ -25,7 +26,7 @@ class Motorcycles extends React.Component {
   }
 
   removeMotorcycle = (motorcycleId) => {
-    motorcyclesData.deleteMotorcycle(motorcycleId)
+    smash.completelyRemoveMotorcycle(motorcycleId)
       .then(() => this.getMotorcycles())
       .catch((err) => console.error('unable to delete motorcycle:', err));
   }
