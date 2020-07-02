@@ -12,8 +12,16 @@ MotoWorx was created for motorcycle owners that would like to keep up with maint
 Axios, Bootstrap, CSS, ES6 Modules, Firebase (for authentication and data management), Github (for version control and project management), Google login authentication, HTML5, JavaScript, JSX, React, React Router, reactstrap, SASS and Webpack.
 
 ## How To Run
-
 1. Clone down this repo.
-2. Make sure you have http-server installed via npm. If not, get it [here](https://www.npmjs.com/package/http-server).
-3. On your command line, run hs -p 8888.
-4. In your browser, navigate to [http://localhost:8888] .
+2. In the terminal run npm install
+3. Create a firebase project [here](https://firebase.google.com/)
+4. Create src/helpers/apiKeys.json file and add in your firebase keys that were created in the new firebase project. Feel free to reference the apiKeys.example.json file in the project for the correct structure.
+5. Once set up to run enter the following in the terminal npm start
+
+## Future Features
+* API calls for suggested maintenance items according to mileage
+* Mobile ready
+* Photo sharing
+
+## Contributors
+[John R Johnson](https://github.com/John-Ryan-Johnson)
