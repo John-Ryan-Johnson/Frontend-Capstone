@@ -18,7 +18,7 @@ class MotorcycleCard extends React.Component {
 
     return (
       <div className="MotorcycleCard col-4">
-        <div className="card bikeCard">
+        <div className="card bikeCard mb-5">
           <img src={motorcycle.imageUrl} className="card-img-top" alt="Motorcycle Pic"/>
           <div className="card-body">
             <h5 className="card-title bikeName">{motorcycle.name}</h5>

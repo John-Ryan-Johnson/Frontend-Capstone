@@ -45,3 +45,11 @@ h3 {
   font-size: 2rem;
 }
 
+.singleBackBtn {
+  color: $secondaryColor;
+  float: right;
+}
+
+.singleBackBtn:hover {
+  color: $secondaryColor;
+}

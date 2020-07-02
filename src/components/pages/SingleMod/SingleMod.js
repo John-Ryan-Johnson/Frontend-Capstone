@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 import repairsData from '../../../helpers/data/repairsData';
 import './SingleMod.scss';
@@ -35,6 +36,7 @@ class SingleMod extends React.Component {
                 <input type='checkbox' checked={repair.isDone}/>
                 <label htmlFor='done'>Done</label>
               </div>
+              <Link className="singleBackBtn" onClick={() => this.props.history.goBack()}><i class="fas fa-times fa-2x"></i></Link>
             </div>
           </div>
         </div>
