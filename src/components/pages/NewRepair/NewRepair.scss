@@ -9,6 +9,10 @@
   font-weight: 400;
 }
 
+.form-group label {
+  color: $secondaryColor;
+}
+
 .form-check-input {
   color: $secondaryColor;
 }
@@ -24,4 +28,15 @@
   text-decoration: none;
   background-color: $secondaryColor;
   color: $primaryColor;
+}
+
+.backBtn {
+  position: absolute;
+  top: 2%;
+  right: 27%;
+  color: $secondaryColor;
+}
+
+.backBtn:hover {
+  color: $secondaryColor;
 }

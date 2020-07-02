@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import repairsData from '../../../helpers/data/repairsData';
 
@@ -89,7 +90,8 @@ class NewRepair extends React.Component {
 
     return (
       <div className='NewRepair col-12'>
-        <h1 className='repairFormName mt-5 mb-5'>Add Repair Form</h1>
+        <h1 className='repairFormName mt-5 mb-5'>Add Form</h1>
+        <Link className="backBtn" onClick={() => this.props.history.goBack()}><i class="fas fa-times fa-2x"></i></Link>
         <form className='col-6 offset-3'>
           <div className='form-group'>
             <label htmlFor='repair-name'>Name</label>
