@@ -18,7 +18,7 @@ class RepairCard extends React.Component {
     const repairEditLink = `/motorcycles/${motorcycleId}/repairs/${repair.id}/edit`;
     return (
       <div className='RepairCard col-4'>
-        <div className='card repairCard card-flip mt-3'>
+        <div className='card repairCard card-flip mt-3 mb-3'>
           <div className='card-front'>
             <div className='card-body'>
               <h2 className='card-title repairName'>{repair.name}</h2>
