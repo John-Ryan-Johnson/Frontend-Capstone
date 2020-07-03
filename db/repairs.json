@@ -1,7 +1,7 @@
 {
   "repair1": {
     "name": "Engine Oil",
-    "comments": "check oil filter also",
+    "comments": "Replace Engine Oil and Oil Filter",
     "isDone": true,
     "isMod": false,
     "mileage": 1000,
@@ -9,48 +9,192 @@
     "uid": "2voYRLvxnjh503NFAyqgKgUk9ng1"
   },
   "repair2": {
-    "name": "Air Cleaner",
-    "comments": "clean or replace",
-    "isDone": false,
+    "name": "Air Filter",
+    "comments": "Inspect Air Filter: service as required",
+    "isDone": true,
     "isMod": false,
-    "mileage": 5000,
-    "motorcycleId": "motorcycle2",
+    "mileage": 1000,
+    "motorcycleId": "motorcycle1",
     "uid": "2voYRLvxnjh503NFAyqgKgUk9ng1"
   },
   "repair3": {
-    "name": "Seat",
-    "comments": "replace with solo seat with backrest",
-    "isDone": false,
-    "isMod": true,
+    "name": "Brakes",
+    "comments": "Inspect Brake System: brake pads, discs, oil lines, fluid reservoir",
+    "isDone": true,
+    "isMod": false,
     "mileage": 1000,
     "motorcycleId": "motorcycle1",
     "uid": "2voYRLvxnjh503NFAyqgKgUk9ng1"
   },
   "repair4": {
-    "name": "Steel Braided Brake Lines",
-    "comments": "dealer performed mod",
+    "name": "Tires",
+    "comments": "Review Tires: pressure, tread, tightness of wheel spokes",
     "isDone": true,
-    "isMod": true,
-    "mileage": 3000,
-    "motorcycleId": "motorcycle2",
+    "isMod": false,
+    "mileage": 1000,
+    "motorcycleId": "motorcycle1",
     "uid": "2voYRLvxnjh503NFAyqgKgUk9ng1"
   },
   "repair5": {
-    "name": "Steel Braided Brake Lines",
-    "comments": "dealer performed mod",
-    "isDone": false,
-    "isMod": true,
-    "mileage": 2500,
+    "name": "Rear Drive Belt",
+    "comments": "Review Rear Drive Belt and Sprockets: inspect and adjust belt",
+    "isDone": true,
+    "isMod": false,
+    "mileage": 1000,
     "motorcycleId": "motorcycle1",
     "uid": "2voYRLvxnjh503NFAyqgKgUk9ng1"
   },
   "repair6": {
-    "name": "Air Cleaner",
-    "comments": "replace",
+    "name": "Transmission",
+    "comments": "Check Transmission: replace lubricant",
+    "isDone": true,
+    "isMod": false,
+    "mileage": 1000,
+    "motorcycleId": "motorcycle1",
+    "uid": "2voYRLvxnjh503NFAyqgKgUk9ng1"
+  },
+  "repair7": {
+    "name": "Clutch",
+    "comments": "Review Clutch: adjust and lubricate, throttle, brake, clutch controls",
+    "isDone": true,
+    "isMod": false,
+    "mileage": 1000,
+    "motorcycleId": "motorcycle1",
+    "uid": "2voYRLvxnjh503NFAyqgKgUk9ng1"
+  },
+  "repair8": {
+    "name": "Fuel Components",
+    "comments": "Inspect Fuel Valve, Lines and Fittings: look for leaks",
+    "isDone": true,
+    "isMod": false,
+    "mileage": 1000,
+    "motorcycleId": "motorcycle1",
+    "uid": "2voYRLvxnjh503NFAyqgKgUk9ng1"
+  },
+  "repair9": {
+    "name": "Spark Plugs",
+    "comments": "Inspect Spark Plugs",
+    "isDone": true,
+    "isMod": false,
+    "mileage": 1000,
+    "motorcycleId": "motorcycle1",
+    "uid": "2voYRLvxnjh503NFAyqgKgUk9ng1"
+  },
+  "repair10": {
+    "name": "Electrical",
+    "comments": "Check operation of Electrical Equipment and Switches",
+    "isDone": true,
+    "isMod": false,
+    "mileage": 1000,
+    "motorcycleId": "motorcycle1",
+    "uid": "2voYRLvxnjh503NFAyqgKgUk9ng1"
+  },
+  "repair11": {
+    "name": "Fasteners",
+    "comments": "Check Tightness of all Critical Fasteners: hand controls, brake system, axle nuts, front fork components, riser and handle bar fasteners",
+    "isDone": true,
+    "isMod": false,
+    "mileage": 1000,
+    "motorcycleId": "motorcycle1",
+    "uid": "2voYRLvxnjh503NFAyqgKgUk9ng1"
+  },
+  "repair12": {
+    "name": "Exhaust",
+    "comments": "Inspect Exhaust System: leaks, cracks and loose or missing fasteners or heat shields",
+    "isDone": true,
+    "isMod": false,
+    "mileage": 1000,
+    "motorcycleId": "motorcycle1",
+    "uid": "2voYRLvxnjh503NFAyqgKgUk9ng1"
+  },
+  "repair13": {
+    "name": "Engine Oil",
+    "comments": "Replace Engine Oil and Oil Filter",
     "isDone": false,
     "isMod": false,
     "mileage": 5000,
-    "motorcycleId": "motorcycle1",
+    "motorcycleId": "motorcycle2",
+    "uid": "2voYRLvxnjh503NFAyqgKgUk9ng1"
+  },
+  "repair14": {
+    "name": "Air Filter",
+    "comments": "Inspect Air Filter: service as required",
+    "isDone": false,
+    "isMod": false,
+    "mileage": 5000,
+    "motorcycleId": "motorcycle2",
+    "uid": "2voYRLvxnjh503NFAyqgKgUk9ng1"
+  },
+  "repair15": {
+    "name": "Brakes",
+    "comments": "Inspect Brake System: brake pads, discs, oil lines, fluid reservoir",
+    "isDone": false,
+    "isMod": false,
+    "mileage": 5000,
+    "motorcycleId": "motorcycle2",
+    "uid": "2voYRLvxnjh503NFAyqgKgUk9ng1"
+  },
+  "repair16": {
+    "name": "Tires",
+    "comments": "Review Tires: pressure, tread, tightness of wheel spokes",
+    "isDone": false,
+    "isMod": false,
+    "mileage": 5000,
+    "motorcycleId": "motorcycle2",
+    "uid": "2voYRLvxnjh503NFAyqgKgUk9ng1"
+  },
+  "repair17": {
+    "name": "Rear Drive Belt",
+    "comments": "Review Rear Drive Belt and Sprockets: inspect and adjust belt",
+    "isDone": false,
+    "isMod": false,
+    "mileage": 5000,
+    "motorcycleId": "motorcycle2",
+    "uid": "2voYRLvxnjh503NFAyqgKgUk9ng1"
+  },
+  "repair18": {
+    "name": "Clutch",
+    "comments": "Review Clutch: adjust and lubricate, throttle, brake, clutch controls",
+    "isDone": false,
+    "isMod": false,
+    "mileage": 5000,
+    "motorcycleId": "motorcycle2",
+    "uid": "2voYRLvxnjh503NFAyqgKgUk9ng1"
+  },
+  "repair19": {
+    "name": "Fuel Components",
+    "comments": "Inspect Fuel Valve, Lines and Fittings: look for leaks",
+    "isDone": false,
+    "isMod": false,
+    "mileage": 5000,
+    "motorcycleId": "motorcycle2",
+    "uid": "2voYRLvxnjh503NFAyqgKgUk9ng1"
+  },
+  "repair20": {
+    "name": "Spark Plugs",
+    "comments": "Inspect Spark Plugs",
+    "isDone": false,
+    "isMod": false,
+    "mileage": 5000,
+    "motorcycleId": "motorcycle2",
+    "uid": "2voYRLvxnjh503NFAyqgKgUk9ng1"
+  },
+  "repair21": {
+    "name": "Electrical",
+    "comments": "Check operation of Electrical Equipment and Switches",
+    "isDone": false,
+    "isMod": false,
+    "mileage": 5000,
+    "motorcycleId": "motorcycle2",
+    "uid": "2voYRLvxnjh503NFAyqgKgUk9ng1"
+  },
+  "repair22": {
+    "name": "Exhaust",
+    "comments": "Inspect Exhaust System: leaks, cracks and loose or missing fasteners or heat shields",
+    "isDone": false,
+    "isMod": false,
+    "mileage": 5000,
+    "motorcycleId": "motorcycle2",
     "uid": "2voYRLvxnjh503NFAyqgKgUk9ng1"
   }
 }
