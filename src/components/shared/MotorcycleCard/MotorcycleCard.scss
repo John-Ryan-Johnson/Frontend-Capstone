@@ -59,3 +59,16 @@
   text-decoration: none;
   color: $secondaryColor;
 }
+
+@media screen and (max-width: 850px) {
+  .editBtn {
+    font-size: .70rem;
+    right: 30px;
+    bottom: 10px;
+  }
+
+  .deleteBtn {
+    font-size: .70rem;
+    bottom: 10px;
+  }
+}
