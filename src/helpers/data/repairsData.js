@@ -42,6 +42,23 @@ const getModsByMotorcycleId = (motorcycleId) => new Promise((resolve, reject) =>
     .catch((err) => reject(err));
 });
 
+const getAllRepairsByMotorcycleId = (motorcycleId) => new Promise((resolve, reject) => {
+  axios.get(`${baseUrl}/repairs.json?orderBy="motorcycleId"&equalTo="${motorcycleId}"`)
+    .then((response) => {
+      const allRepairsObject = response.data;
+      const repairs = [];
+      if (allRepairsObject) {
+        Object.keys(allRepairsObject).forEach((repairId) => {
+          const newRepair = allRepairsObject[repairId];
+          newRepair.id = repairId;
+          repairs.push(newRepair);
+        });
+      }
+      resolve(repairs);
+    })
+    .catch((err) => reject(err));
+});
+
 const getSingleRepair = (repairId) => axios.get(`${baseUrl}/repairs/${repairId}.json`);
 
 const postRepair = (newRepair) => axios.post(`${baseUrl}/repairs.json`, newRepair);
@@ -57,4 +74,5 @@ export default {
   postRepair,
   deleteRepair,
   putRepair,
+  getAllRepairsByMotorcycleId,
 };

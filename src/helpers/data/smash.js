@@ -4,16 +4,10 @@ import repairsData from './repairsData';
 const completelyRemoveMotorcycle = (motorcycleId) => new Promise((resolve, reject) => {
   motorcyclesData.deleteMotorcycle(motorcycleId)
     .then(() => {
-      repairsData.getRepairsByMotorcycleId(motorcycleId)
+      repairsData.getAllRepairsByMotorcycleId(motorcycleId)
         .then((repairs) => {
-          repairs.forEach((repair) => repairsData.deleteRepair(repair.id))
-            .then(() => {
-              repairsData.getModsByMotorcycleId(motorcycleId)
-                .then(() => {
-                  repairs.forEach((repair) => repairsData.deleteRepair(repair.id));
-                });
-              resolve();
-            });
+          repairs.forEach((repair) => repairsData.deleteRepair(repair.id));
+          resolve();
         });
     })
     .catch((err) => reject(err));
