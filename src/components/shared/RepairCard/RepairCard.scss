@@ -109,3 +109,18 @@ h5 {
 .card-flip:hover .card-back {
   transform: rotateY(0deg);
 }
+
+@media screen and (max-width: 850px) {
+  .editRepairBtn {
+    font-size: .70rem;
+    top: 94%;
+    right: 12%;
+    bottom: 0;
+  }
+
+  .deleteRepairBtn {
+    font-size: .70rem;
+    top: 94%;
+    bottom: 0;
+  }
+}

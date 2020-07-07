@@ -70,9 +70,9 @@ const putRepair = (repairId, updatedRepair) => axios.put(`${baseUrl}/repairs/${r
 export default {
   getRepairsByMotorcycleId,
   getModsByMotorcycleId,
+  getAllRepairsByMotorcycleId,
   getSingleRepair,
   postRepair,
   deleteRepair,
   putRepair,
-  getAllRepairsByMotorcycleId,
 };

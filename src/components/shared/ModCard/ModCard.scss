@@ -85,3 +85,42 @@ label {
 .card-flip:hover .card-back {
   transform: rotateY(0deg);
 }
+
+.deleteRepairBtn {
+  position: absolute;
+  top: 92%;
+  right: 0;
+  color: $primaryColor;
+}
+
+.deleteRepairBtn:hover {
+  text-decoration: none;
+  color: $primaryColor;
+}
+
+.editRepairBtn {
+  position: absolute;
+  top: 92%;
+  right: 7%;
+  color: $primaryColor;
+}
+
+.editRepairBtn:hover {
+  text-decoration: none;
+  color: $primaryColor;
+}
+
+@media screen and (max-width: 850px) {
+  .editRepairBtn {
+    font-size: .70rem;
+    top: 94%;
+    right: 12%;
+    bottom: 0;
+  }
+
+  .deleteRepairBtn {
+    font-size: .70rem;
+    top: 94%;
+    bottom: 0;
+  }
+}
