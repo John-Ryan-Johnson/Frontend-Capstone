@@ -1,5 +1,5 @@
 # MotoWorx
-[MotorWorx App](https://motoworx-1e6a3.web.app/)
+[MotoWorx App](https://motoworx-1e6a3.web.app/)
 
 ## Description
 This application is a culmination of six months of intensive front-end software development bootcamp. It is to show technologies and methods learned during this time period.
